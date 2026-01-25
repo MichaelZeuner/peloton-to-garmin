@@ -12,8 +12,8 @@ on:
       saveLocalCopy:
         type: boolean
         default: false
-  schedule:
-    - cron: '7/15 * * * *'
+  #schedule:
+  #  - cron: '7/15 * * * *'
 
 env:
   OUTPUT_DIR: /app/output
@@ -93,6 +93,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
